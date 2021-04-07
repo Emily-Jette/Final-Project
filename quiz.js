@@ -42,6 +42,9 @@ document.getElementById('pop-culture').addEventListener('click', questionSix)
 // when the user finishes the quiz they press a button which activates the endGame function
 document.getElementById('finish').addEventListener('click', endGame)
 
+// This is to help the user out, so it waits for the user to click the hint button. 
+document.getElementById('help').addEventListener('click', hints)
+
 // checks question two. first, stores text in the input box into variable. then, checks to see if the answer is correct
 function questionTwo () {
   capital = document.getElementById('answer-2').value
@@ -67,7 +70,7 @@ function questionThree () {
 // puts the user's answer into a variable then checks if the answer is Mark 2 or Mark II
 function questionFive () {
   computer = document.getElementById('answer-5').value
-  if (computer === 'Mark 2' || computer === 'Mark II') {
+  if (computer === 'Mark 2' || computer === 'Mark II' || computer === 'Harvard Mark 2' || computer === 'Harvard Mark II') {
     correct()
   } else {
     wrong()
@@ -93,4 +96,14 @@ function endGame () {
   } else {
     alert('You got 0/100. Better luck next time.  Try again to see if you can beat your score!')
   }
+}
+
+// Gives a hint for each one of the questions in the form of an alert
+function hints () {
+  alert('1. He was in One Direction.')
+  alert('2. The capital is not Istanbul, it starts with an A.') 
+  alert('3. What is 3x9 and what is 3x2?') 
+  alert('4. She has won over 10.') 
+  alert('5. Grace Hopper worked with this computer at Harvard Univeristy.')
+  alert('6. The protagonist of this film loves marmalade.')
 }
