@@ -42,7 +42,7 @@ document.getElementById('pop-culture').addEventListener('click', questionSix)
 // when the user finishes the quiz they press a button which activates the endGame function
 document.getElementById('finish').addEventListener('click', endGame)
 
-// This is to help the user out, so it waits for the user to click the hint button. 
+// This is to help the user out, so it waits for the user to click the hint button
 document.getElementById('help').addEventListener('click', hints)
 
 // checks question two. first, stores text in the input box into variable. then, checks to see if the answer is correct
@@ -101,8 +101,8 @@ function endGame () {
 // Gives a hint for each one of the questions in the form of an alert
 function hints () {
   alert('1. He was in One Direction.')
-  alert('2. The capital is not Istanbul, it starts with an A.') 
-  alert('3. What is 3x9 and what is 3x2?') 
+  alert('2. The capital is not Istanbul, it starts with an A.')
+  alert('3. What is 3x9 and what is 3x2?')
   alert('4. She has won over 10.') 
   alert('5. Grace Hopper worked with this computer at Harvard Univeristy.')
   alert('6. The protagonist of this film loves marmalade.')
