@@ -45,10 +45,10 @@ document.getElementById('finish').addEventListener('click', endGame)
 // checks question two. first, stores text in the input box into variable. then, checks to see if the answer is correct
 function questionTwo () {
   capital = document.getElementById('answer-2').value
-  if (capital === 'Ankara'){
-    correct ()
+  if (capital === 'Ankara') {
+    correct()
   } else {
-    wrong ()
+    wrong()
   }
 }
 
@@ -57,20 +57,20 @@ function questionThree () {
   trueProduct = multiplier * multiplicand
   userProduct = document.getElementById('answer-3').value
   userProduct = parseInt(userProduct)
-  if (userProduct === trueProduct){
-    correct ()
+  if (userProduct === trueProduct) {
+    correct()
   } else {
-    wrong ()
+    wrong()
   }
 }
 
 // puts the user's answer into a variable then checks if the answer is Mark 2 or Mark II
 function questionFive () {
   computer = document.getElementById('answer-5').value
-  if (computer === 'Mark 2' || computer === 'Mark II'){
-    correct ()
+  if (computer === 'Mark 2' || computer === 'Mark II') {
+    correct()
   } else {
-    wrong ()
+    wrong()
   }
 }
 
