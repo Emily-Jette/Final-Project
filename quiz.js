@@ -25,7 +25,7 @@ document.getElementById('answer-c').addEventListener('click', correct)
 // question two: get button id so that can check the capital of turkey is correct
 document.getElementById('geography').addEventListener('click', questionTwo)
 
-// question three: gets id from button so function can do math and check if user is corrrect
+// question three: gets id from button so function can do math and check if user is correct
 document.getElementById('math').addEventListener('click', questionThree)
 
 // question four: gets id of button and checks if it was clicked. if answer a or c wrong and if answer b correct
