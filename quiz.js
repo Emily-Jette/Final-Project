@@ -103,7 +103,7 @@ function hints () {
   alert('1. He was in One Direction.')
   alert('2. The capital is not Istanbul, it starts with an A.')
   alert('3. What is 3x9 and what is 3x2?')
-  alert('4. She has won over 10.') 
+  alert('4. She has won over 10.')
   alert('5. Grace Hopper worked with this computer at Harvard Univeristy.')
   alert('6. The protagonist of this film loves marmalade.')
 }
