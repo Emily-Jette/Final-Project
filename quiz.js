@@ -7,16 +7,6 @@ let userProduct = 0
 let computer = null
 let movie = null
 
-// this is what happens when the user gets the answer correct
-function correct () {
-  score = score + 1
-  alert('Right on!')
-}
-// this is what happens when the user gets the answer wrong
-function wrong () {
-  alert('Better luck next time')
-}
-
 // question one: get button id and if a or b wrong if c correct
 document.getElementById('answer-a').addEventListener('click', wrong)
 document.getElementById('answer-b').addEventListener('click', wrong)
@@ -44,6 +34,17 @@ document.getElementById('finish').addEventListener('click', endGame)
 
 // This is to help the user out, so it waits for the user to click the hint button
 document.getElementById('help').addEventListener('click', hints)
+
+// this is what happens when the user gets the answer correct
+function correct () {
+  score = score + 1
+  alert('Right on!')
+}
+
+// this is what happens when the user gets the answer wrong
+function wrong () {
+  alert('Better luck next time')
+}
 
 // checks question two. first, stores text in the input box into variable. then, checks to see if the answer is correct
 function questionTwo () {
@@ -91,7 +92,7 @@ function questionSix () {
 function endGame () {
   if (score === 6) {
     alert('Oh my, we’ve got a trivia genius on our hands! You got 100/100. Good job!')
-  } else if (score === 4 || score === 5 || score === 3 || score === 2 || score === 1) {
+  } else if (score === 5 || score === 4 || score === 3 || score === 2 || score === 1) {
     alert('You were so close.You got ' + score + '/6. Try again to see if you can beat your score!')
   } else {
     alert('You got 0/100. Better luck next time.  Try again to see if you can beat your score!')
